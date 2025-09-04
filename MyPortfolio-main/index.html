@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandeep Bhukya – Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <h1 class="flex items-center space-x-3 text-xl font-bold">
+                <img src="Assets/Black and White Elegant Letter Initials Brand Monogram Logo.png" alt="User Image"
+                    class="w-10 h-10 rounded-full border-2 border-white shadow-lg" />
+                <span
+                    class="font-[Comfortaa] bg-gradient-to-r from-pink-700 to-black bg-clip-text text-transparent text-2xl sm:text-3xl">SANDEEP
+                    BHUKYA.</span>
+            </h1>
+            <div class="md:hidden text-3xl cursor-pointer" id="menu-btn">☰</div>
+            <ul class="hidden md:flex space-x-4 lg:space-x-6 items-center">
+                <li><a href="#home" class="hover:text-green-700 text-sm sm:text-base">Home</a></li>
+                <li><a href="#about" class="hover:text-green-700 text-sm sm:text-base">About</a></li>
+                <li><a href="#projects" class="hover:text-green-700 text-sm sm:text-base">Projects</a></li>
+                <li><a href="#skills" class="hover:text-green-700 text-sm sm:text-base">Skills</a></li>
+                <li><a href="#experience" class="hover:text-green-700 text-sm sm:text-base">Experience</a></li>
+                <li><a href="#education" class="hover:text-green-700 text-sm sm:text-base">Education</a></li>
+                <li>
+                    <a href="https://wa.me/919014010072" target="_blank"
+                        class="flex items-center px-4 py-2 bg-gradient-to-r from-black to-green-700 text-white rounded-full shadow-lg hover:scale-105 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4 mr-2"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.399A7.92 7.92 0 0 0 8 0a7.92 7.92 0 0 0-8 7.999c0 1.414.368 2.813 1.065 4.037L.018 16l4.157-1.091A7.92 7.92 0 0 0 8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8z" />
+                        </svg>
+                        WhatsApp
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Mobile Menu -->
+        <ul class="md:hidden hidden flex-col space-y-4 bg-white px-6 py-4 text-center" id="mobile-menu">
+            <li><a href="#home" class="hover:text-green-700">Home</a></li>
+            <li><a href="#about" class="hover:text-green-700">About</a></li>
+            <li><a href="#projects" class="hover:text-green-700">Projects</a></li>
+            <li><a href="#skills" class="hover:text-green-700">Skills</a></li>
+            <li><a href="#experience" class="hover:text-green-700">Experience</a></li>
+            <li><a href="#education" class="hover:text-green-700">Education</a></li>
+            <li>
+                <a href="https://wa.me/919014010072" target="_blank"
+                    class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-black to-green-700 text-white rounded-full shadow-lg">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+                        class="w-4 h-4 mr-2" />
+                    WhatsApp
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Responsive padding to avoid navbar overlap -->
+    <!-- <div class="pt-28 sm:pt-32"></div> -->
+
+
+    <!-- Hero Section -->
+    <section id="home" class="  min-h-screen pt-28 px-4 flex items-center">
+        <div class="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-10 w-full">
+            <!-- Text Content -->
+            <div class="text-center lg:text-left space-y-6 max-w-xl">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
+                    Hello, I’m <span
+                        class="bg-gradient-to-r from-pink-700 to-black bg-clip-text text-transparent">Sandeep</span>
+                </h1>
+
+                <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-3xl leading-tight">
+                    <span class="bg-gradient-to-r from-pink-900 via-red-600 to-black bg-clip-text text-transparent">
+                        ~ Full Stack Web Developer | MERN Stack Developer
+                    </span>
+                </h2>
+
+                <h1 class="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
+                    I build responsive & modern websites.
+                </h1>
+
+                <div class="flex flex-wrap justify-center lg:justify-start gap-4 pt-4">
+                    <!-- View My Work Button -->
+                    <a href="#projects"
+                        class="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-black to-green-700 text-white text-sm sm:text-base rounded-full shadow-md hover:shadow-xl transition-all duration-300">
+                        <i class="fas fa-laptop-code"></i>
+                        View My Work
+                    </a>
+
+                    <!-- Get In Touch Button -->
+                    <a href="#contact"
+                        class="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-black to-green-700 text-white text-sm sm:text-base rounded-full shadow-md hover:shadow-xl transition-all duration-300">
+                        <i class="fas fa-handshake"></i>
+                        Get In Touch
+                    </a>
+
+                    <!-- Download CV Button -->
+                    <a href="Assets/Resume_ (2).pdf" download
+                        class="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-black to-green-700 text-white text-sm sm:text-base rounded-full shadow-md hover:shadow-xl transition-all duration-300">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+
+            <!-- Image -->
+            <div class="flex justify-center lg:justify-end">
+                <img src="Assets/Home_portfolio.png" alt="Sandeep Bhukya"
+                    class="w-96 h-96 object-cover object-[0px_-20px] rounded-full border-4 border-blur-600 shadow-xl">
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- About Section -->
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 sm:px-6">
+        <h2 class="text-3xl sm:text-4xl text-center font-bold mb-12">About Me</h2>
+
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+            <!-- Image on Left -->
+            <div class="flex-shrink-0">
+                <img src="Assets/About.png" alt="Sandeep Bhukya"
+                    class="w-96 h-96 object-cover object-[0px_-20px] rounded-full border-4 border-blur-600 shadow-xl" />
+            </div>
+
+            <!-- Text on Right -->
+            <div class="text-lg text-gray-700 space-y-6">
+                <p>
+                    Hi, I’m <span
+                        class=" bg-gradient-to-r from-purple-900 to-blue-800 bg-clip-text text-transparent">Sandeep
+                        Bhukya</span>, a <strong>Full Stack
+                        Developer</strong> passionate about building efficient and scalable web applications.
+                    I specialize in <strong>JavaScript, React, Node.js, Express, Python, and Django</strong>, with
+                    experience in databases like <strong>MongoDB, MySQL, and PostgreSQL</strong>.
+                </p>
+                <p>
+                    My projects include a <strong>Student-Mentor Booking website</strong> (Javascript, Node.js,
+                    Expreess, MongoDB), <strong>Found-Here
+                        Web application</strong> (Javascript, Node.js, Expreess, MongoDB), and a <strong>AI-Chat
+                        Bot</strong> (HTML, CSS,
+                    JavaScript).
+                </p>
+                <p>
+                    I focus on smooth frontend-backend integration, use <strong>Git</strong> for version control, and
+                    deploy via <strong>Vercel</strong> and <strong>Render</strong>. I'm eager to learn, grow, and
+                    contribute to impactful software projects.
+                </p>
+
+                <!-- Contact Buttons -->
+                <!-- Personal Info Box -->
+
+                <div class="flex flex-wrap gap-4 pt-4">
+
+                    <a href="https://www.linkedin.com/in/sandeepbhukya424/" target="_blank"
+                        class="flex items-center gap-2 bg-gradient-to-r from-black to-blue-700 text-white px-4 py-2 rounded-full shadow-lg hover:scale-105 transition">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/Sandeep-crtl" target="_blank"
+                        class="flex items-center gap-2 bg-gradient-to-r from-black to-gray-700 text-white px-4 py-2 rounded-full shadow-lg hover:scale-105 transition">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4 sm:px-6">
+        <h2 class="text-3xl sm:text-4xl text-center font-bold mb-12">My Projects</h2>
+        <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Project Card -->
+            <div class="bg-white shadow-md rounded-lg p-5 hover:shadow-xl transition">
+                <img src="Assets/Found-Here.png" alt="Bus Booking App" class="rounded w-full h-64 object-cover mb-4">
+                <h3 class="text-xl font-semibold mb-2">Found-Here Web Application</h3>
+
+                <!-- Tech Stack Badges -->
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">JavaScript</span>
+                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Node.js</span>
+                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Express</span>
+                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">MongoDB</span>
+                </div>
+
+                <!-- Description -->
+                <p class="text-gray-600 text-sm mb-4">
+                    FoundHere — lost & found web app with photo uploads, location tagging,
+                    smart matching, notifications, and admin review, built with React, Express & MongoDB.
+                </p>
+
+                <!-- Buttons -->
+                <div class="flex gap-3">
+                    <a href="https://github.com/Sandeep-crtl/found.here" target="_blank"
+                        class="px-4 py-2 bg-gray-800 text-white text-sm rounded-lg hover:bg-gray-900 transition">
+                        GitHub
+                    </a>
+                    <a href="https://found-here.onrender.com/" target="_blank"
+                        class="px-4 py-2 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700 transition">
+                        Live Demo
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- AI Chatbot Project -->
+            <div class="bg-white shadow-md rounded-lg p-5 hover:shadow-xl transition">
+                <img src="Assets/AI-Chat-box.png" alt="AI Chat Bot" class="rounded w-full h-64 object-cover mb-4">
+                <h3 class="text-xl font-semibold mb-2">AI-Chat Bot Web Application</h3>
+
+                <!-- Tech Stack -->
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">HTML</span>
+                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">CSS</span>
+                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">JavaScript</span>
+                </div>
+
+                <!-- Description -->
+                <p class="text-gray-600 text-sm mb-4">
+                    AI Chatbot web application with real-time conversation, Chat with AI, Spend time by chatting and
+                    discusion and smart response generation using NLP.
+                </p>
+
+                <!-- Buttons -->
+                <div class="flex gap-3">
+                    <a href="https://github.com/your-username/ai-chatbot" target="_blank"
+                        class="px-4 py-2 bg-gray-800 text-white text-sm rounded-lg hover:bg-gray-900 transition">
+                        GitHub
+                    </a>
+                    <a href="https://ai-chatbot-demo.vercel.app" target="_blank"
+                        class="px-4 py-2 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700 transition">
+                        Live Demo
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Student-Mentor Booking Project -->
+            <div class="bg-white shadow-md rounded-lg p-5 hover:shadow-xl transition">
+                <img src="Assets/Booking.png" alt="Student-Mentor Booking App"
+                    class="rounded w-full h-64 object-cover mb-4">
+                <h3 class="text-xl font-semibold mb-2">Student-Mentor Booking Web Application</h3>
+
+                <!-- Tech Stack -->
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">JavaScript</span>
+                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Node.js</span>
+                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Express</span>
+                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">MongoDB</span>
+                </div>
+
+                <!-- Description -->
+                <p class="text-gray-600 text-sm mb-4">
+                    Student-Mentor booking web application with authentication, teacher
+                    management, appointment scheduling, and admin approval features.
+                </p>
+
+                <!-- Buttons -->
+                <div class="flex gap-3">
+                    <a href="https://github.com/Sandeep-crtl/student-Teacher-Booking" target="_blank"
+                        class="px-4 py-2 bg-gray-800 text-white text-sm rounded-lg hover:bg-gray-900 transition">
+                        GitHub
+                    </a>
+                    <a href="https://student-teacher-booking-1-vwrw.onrender.com/" target="_blank"
+                        class="px-4 py-2 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700 transition">
+                        Live Demo
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="skills" class="py-16 px-4 sm:px-6 ">
+        <h2 class="text-3xl sm:text-4xl text-center font-bold mb-12">My Skills</h2>
+        <div class="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+
+            <!-- HTML -->
+            <div
+                class="bg-white border border-gray-200 shadow-md rounded-xl p-4 text-center hover:border-blue-400 hover:shadow-lg transition duration-300">
+                <img src="Assets/pngegg(1).png" alt="HTML" class="w-12 h-12 mx-auto mb-2" />
+                <h4 class="text-md font-semibold">HTML</h4>
+            </div>
+
+            <!-- CSS -->
+            <div
+                class="bg-white border border-gray-200 shadow-md rounded-xl p-4 text-center hover:border-blue-400 hover:shadow-lg transition duration-300">
+                <img src="Assets/pngegg(2).png" alt="CSS" class="w-12 h-12 mx-auto mb-2" />
+                <h4 class="text-md font-semibold">CSS</h4>
+            </div>
+
+            <!-- JavaScript -->
+            <div
+                class="bg-white border border-gray-200 shadow-md rounded-xl p-4 text-center hover:border-blue-400 hover:shadow-lg transition duration-300">
+                <img src="Assets/pngegg(3).png" alt="JavaScript" class="w-12 h-12 mx-auto mb-2" />
+                <h4 class="text-md font-semibold">JavaScript</h4>
+            </div>
+
+            <!-- React -->
+            <div
+                class="bg-white border border-gray-200 shadow-md rounded-xl p-4 text-center hover:border-blue-400 hover:shadow-lg transition duration-300">
+                <img src="Assets/pngegg(4).png" alt="React" class="w-12 h-12 mx-auto mb-2" />
+                <h4 class="text-md font-semibold">React</h4>
+            </div>
+
+            <!-- Node.js -->
+            <div
+                class="bg-white border border-gray-200 shadow-md rounded-xl p-4 text-center hover:border-blue-400 hover:shadow-lg transition duration-300">
+                <img src="Assets/pngegg(5).png" alt="Node.js" class="w-12 h-12 mx-auto mb-2" />
+                <h4 class="text-md font-semibold">Node.js</h4>
+            </div>
+
+            <!-- Express.js -->
+            <div
+                class="bg-white border border-gray-200 shadow-md rounded-xl p-4 text-center hover:border-blue-400 hover:shadow-lg transition duration-300">
+                <img src="Assets/pngegg(6).png" alt="Express.js" class="w-12 h-12 mx-auto mb-2" />
+                <h4 class="text-md font-semibold">Express.js</h4>
+            </div>
+
+            <!-- Python -->
+            <div
+                class="bg-white border border-gray-200 shadow-md rounded-xl p-4 text-center hover:border-blue-400 hover:shadow-lg transition duration-300">
+                <img src="Assets/pngegg(7).png" alt="Python" class="w-12 h-12 mx-auto mb-2" />
+                <h4 class="text-md font-semibold">Python</h4>
+            </div>
+
+            <!-- Django -->
+            <div
+                class="bg-white border border-gray-200 shadow-md rounded-xl p-4 text-center hover:border-blue-400 hover:shadow-lg transition duration-300">
+                <img src="Assets/pngegg(8).png" alt="Django" class="w-12 h-12 mx-auto mb-2" />
+                <h4 class="text-md font-semibold">Django</h4>
+            </div>
+
+            <!-- MongoDB -->
+            <div
+                class="bg-white border border-gray-200 shadow-md rounded-xl p-4 text-center hover:border-blue-400 hover:shadow-lg transition duration-300">
+                <img src="Assets/pngegg(9).png" alt="MongoDB" class="w-12 h-12 mx-auto mb-2" />
+                <h4 class="text-md font-semibold">MongoDB</h4>
+            </div>
+
+            <!-- MySQL -->
+            <div
+                class="bg-white border border-gray-200 shadow-md rounded-xl p-4 text-center hover:border-blue-400 hover:shadow-lg transition duration-300">
+                <img src="Assets/pngegg(10).png" alt="MySQL" class="w-12 h-12 mx-auto mb-2" />
+                <h4 class="text-md font-semibold">MySQL</h4>
+            </div>
+
+            <!-- GitHub -->
+            <div
+                class="bg-white border border-gray-200 shadow-md rounded-xl p-4 text-center hover:border-blue-400 hover:shadow-lg transition duration-300">
+                <img src="Assets/pngegg(11).png" alt="GitHub" class="w-12 h-12 mx-auto mb-2" />
+                <h4 class="text-md font-semibold">GitHub</h4>
+            </div>
+
+            <!-- Postman -->
+            <div
+                class="bg-white border border-gray-200 shadow-md rounded-xl p-4 text-center hover:border-blue-400 hover:shadow-lg transition duration-300">
+                <img src="Assets/pngegg(12).png" alt="Postman" class="w-12 h-12 mx-auto mb-2" />
+                <h4 class="text-md font-semibold">Postman</h4>
+            </div>
+
+            <!-- Tailwind -->
+            <div
+                class="bg-white border border-gray-200 shadow-md rounded-xl p-4 text-center hover:border-blue-400 hover:shadow-lg transition duration-300">
+                <img src="Assets/pngwing.com(5).png" alt="Tailwind CSS" class="w-12 h-12 mx-auto mb-2" />
+                <h4 class="text-md font-semibold">Tailwind CSS</h4>
+            </div>
+
+            <!-- Bootstrap -->
+            <div
+                class="bg-white border border-gray-200 shadow-md rounded-xl p-4 text-center hover:border-blue-400 hover:shadow-lg transition duration-300">
+                <img src="Assets/pngegg(13).png" alt="Bootstrap" class="w-12 h-12 mx-auto mb-2" />
+                <h4 class="text-md font-semibold">Bootstrap</h4>
+            </div>
+
+            <!-- Figma -->
+            <div
+                class="bg-white border border-gray-200 shadow-md rounded-xl p-4 text-center hover:border-blue-400 hover:shadow-lg transition duration-300">
+                <img src="Assets/pngegg(14).png" alt="Figma" class="w-12 h-12 mx-auto mb-2" />
+                <h4 class="text-md font-semibold">Figma</h4>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 px-4 sm:px-6">
+        <h2 class="text-3xl sm:text-4xl text-center font-bold mb-12">Experience</h2>
+
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-gray-900 text-white rounded-xl shadow-lg p-6 sm:p-8">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                    <div>
+                        <h3 class="text-2xl font-semibold">Unified Mentor Intern</h3>
+                        <p class="text-sm text-gray-300">Hyderabad, Telangana</p>
+                    </div>
+                    <span class="text-green-400 font-medium text-sm md:text-base mt-2 md:mt-0">August 2025</span>
+                </div>
+
+                <ul class="list-disc list-inside space-y-2 text-gray-200 text-sm sm:text-base pl-4">
+                    <li>
+                        Completed a Full-Stack Development internship at Unified Mentor Company in August 2025, gaining
+                        hands-on experience in building scalable web applications.
+                    </li>
+                    <li>
+                        Developed and deployed full-stack projects using HTML, CSS, JavaScript, React, Node.js, and
+                        MongoDB, ensuring responsive and user-friendly design.
+                    </li>
+                    <li>
+                        Collaborated with the team to design and implement authentication, CRUD operations, and REST API
+                        integration for real-world applications.
+                    </li>
+                    <li>
+                        Improved application performance and optimized database queries, enhancing overall efficiency
+                        and user experience.
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 px-4 sm:px-6 bg-gray-50">
+        <h2 class="text-3xl sm:text-4xl text-center font-bold mb-12">Education</h2>
+
+        <!-- Grid layout: 1 column on mobile, 3 on md+ -->
+        <div class="max-w-6xl mx-auto grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- B.Tech -->
+            <div class="bg-white shadow-lg p-6 sm:p-8 rounded-lg text-center">
+                <img src="Assets/bitswgl_logo.png" alt="BITS Logo" class="w-20 h-20 mx-auto mb-4" />
+                <h3 class="text-2xl font-semibold text-gray-800">BITS, Balaji Institute of Technology & Science,
+                    Warangal, TG</h3>
+                <p class="text-gray-700 mt-2">B.Tech in Electronics & Communication Engineering (2020–2024)</p>
+                <p class="text-green-600 font-medium mt-1">CGPA: 6.5</p>
+            </div>
+
+            <!-- Intermediate -->
+            <div class="bg-white shadow-lg p-6 sm:p-8 rounded-lg text-center">
+                <img src="Assets/sr_logo1.png" alt="SR College Logo" class="w-20 h-20 mx-auto mb-4" />
+                <h3 class="text-2xl font-semibold text-gray-800">SR Junior College, Warangal, TG</h3>
+                <p class="text-gray-700 mt-2">Intermediate in MPC (2018–2020)</p>
+                <p class="text-green-600 font-medium mt-1">CGPA: 8.5</p>
+            </div>
+
+            <!-- 10th Class -->
+            <div class="bg-white shadow-lg p-6 sm:p-8 rounded-lg text-center">
+                <img src="Assets/rps_logo.png" alt="RPS Logo" class="w-20 h-20 mx-auto mb-4" />
+                <h3 class="text-2xl font-semibold text-gray-800">Ravi Public School, Nizamabad, TG</h3>
+                <p class="text-gray-700 mt-2">SSC / 10th Standard (2017–2018)</p>
+                <p class="text-green-600 font-medium mt-1">CGPA: 8.8</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 sm:px-6 bg-gray-50 font-sans text-base">
+        <h2 class="text-3xl sm:text-4xl text-center font-bold mb-12">Get In Touch</h2>
+
+        <div class="flex flex-col lg:flex-row justify-between gap-10 max-w-6xl mx-auto">
+
+            <!-- Personal Details Box -->
+            <div class="bg-white border border-gray-200 rounded-xl shadow-lg p-6 text-gray-800 w-full lg:w-1/2">
+                <h3 class="text-2xl font-bold text-center mb-6">Personal Details</h3>
+                <div class="grid grid-cols-1 gap-4 text-lg">
+                    <p><strong>Name:</strong> Sandeep Bhukya</p>
+                    <p><strong>Email:</strong>
+                        <a href="mailto:nayaksandeep424@gmail.com" class="text-blue-600 hover:underline">
+                            nayaksandeep424@gmail.com
+                        </a>
+                    </p>
+                    <p><strong>Phone:</strong>
+                        <a href="tel:+919014010072" class="text-blue-600 hover:underline">
+                            +91‑9014010072
+                        </a>
+                    </p>
+                    <p><strong>Address:</strong> Hyderabad, Telangana, India</p>
+                    <p><strong>Languages:</strong> English, Telugu, Hindi</p>
+
+                    <!-- Social Links -->
+                    <div class="flex items-center gap-10 pt-4">
+                        <a href="#" target="_blank" class="text-blue-600 text-4xl hover:text-blue-800">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="#" target="_blank" class="text-pink-600 text-4xl hover:text-pink-800">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank" class="text-blue-400 text-4xl hover:text-blue-600">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form action="#"
+                class="bg-white border border-gray-200 rounded-xl shadow-lg p-6 w-full lg:w-1/2 space-y-4 text-lg">
+                <h3 class="text-2xl font-bold text-center mb-4">Send a Message</h3>
+                <input type="text" placeholder="Name" required class="w-full p-3 bg-gray-100 text-black rounded">
+                <input type="email" placeholder="Email" required class="w-full p-3 bg-gray-100 text-black rounded">
+                <textarea rows="4" placeholder="Message" required
+                    class="w-full p-3 bg-gray-100 text-black rounded"></textarea>
+                <button type="submit"
+                    class="w-full bg-green-600 px-6 py-3 text-white rounded hover:bg-green-700 transition font-medium">Send
+                    Message</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-center py-6 text-white mt-12">
+        &copy; 2025 Sandeep Bhukya — All Rights Reserved
+    </footer>
+
+
+
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
